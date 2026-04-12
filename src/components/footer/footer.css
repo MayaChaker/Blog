@@ -1,8 +1,45 @@
 footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    align-items: center;
+    gap: 18px;
+    margin-top: 46px;
+    padding: 18px 0 10px;
+    border-top: 1px solid rgba(200,164,93,0.18);
 }
-footer i {
-    margin-left: 20px;
+footer .para p{
+    color: rgba(243,239,231,0.65);
+    letter-spacing: 0.2px;
+}
+footer .icon{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+footer i{
+    margin-left: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1px solid rgba(200,164,93,0.22);
+    background: rgba(20,19,32,0.45);
+    color: rgba(243,239,231,0.78);
+    transition: transform 180ms ease, color 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+footer i:hover{
+    color: rgba(238,217,168,0.98);
+    background: rgba(20,19,32,0.70);
+    border-color: rgba(238,217,168,0.55);
+    transform: translateY(-2px);
+}
+@media only screen and (max-width:768px){
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-bottom: 18px;
+    }
 }

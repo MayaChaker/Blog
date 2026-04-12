@@ -8,20 +8,42 @@ import "./style.css";
 const Slide = () =>{
     const settings = {
         dots: true,
+        dotsClass: "slick-dots pro-dots",
         infinite: true,
         speed: 500,
-        arroes:false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2800,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        centerMode: true,
+        centerPadding: "70px",
         slidesToShow: 1,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              centerMode: false,
+              centerPadding: "0px",
+            },
+          },
+        ],
       };
     return(
     <>
-       <div className="slide">
-        <h2>Single Item</h2>
-        <Slide {...settings}>
+       <div className="slide slider-section">
+        <div className="section-head">
+          <div className="titles">
+            <span className="kicker">Featured</span>
+            <h2>Featured Stories</h2>
+            <p className="sub">Editor’s picks for design, travel, and modern luxury.</p>
+          </div>
+        </div>
+        <Slider {...settings}>
             {Sdata.map((value) =>{
                 return(
-                    <div className="box">
+                    <div className="box" key={value.id}>
                         <div className="img">
                             <img src={value.cover} alt='' />
                         </div>
@@ -29,12 +51,13 @@ const Slide = () =>{
                             <span>{value.category}</span>
                             <span>{value.title}</span>
                             <p>{value.desc}</p>
+                            <p className="meta">{value.author} · {value.date} · {value.readTime}</p>
                         </div>
                     </div>
                 )
             })}
 
-    </Slide>
+    </Slider>
     </div>
     </>
     )

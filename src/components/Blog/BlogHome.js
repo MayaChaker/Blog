@@ -27,7 +27,7 @@ const BlogHome = () =>{
                 {
                     data.map((value) => {
                         return(
-                            <div className='content'>
+                            <div className='content' key={value.id}>
                                 <div className='logo'>
                                     <h1>M</h1>
                                 </div>

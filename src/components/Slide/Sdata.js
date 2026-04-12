@@ -1,45 +1,63 @@
-const Sdata=[
-    {
-        id:1,
-        cover:"img/blog1.jpg",
-        category:"lifeStyle",
-        title:"What are the best countires to visit?",
-        desc:"In this post , we are going to highlight the many benefits of bogging "
-    },
-    {
-        id:2,
-        cover:"img/blog2.jpg",
-        category:"lifeStyle",
-        title:"What are the best countires to visit?",
-        desc:"In this post , we are going to highlight the many benefits of bogging "
-    },
-    {
-        id:3,
-        cover:"img/blog3.jpg",
-        category:"lifeStyle",
-        title:"What are the best countires to visit?",
-        desc:"In this post , we are going to highlight the many benefits of bogging "
-    },
-    {
-        id:4,
-        cover:"img/blog4.jpg",
-        category:"lifeStyle",
-        title:"What are the best countires to visit?",
-        desc:"In this post , we are going to highlight the many benefits of bogging "
-    },
-    {
-        id:5,
-        cover:"img/card-5.jpg",
-        category:"lifeStyle",
-        title:"What are the best countires to visit?",
-        desc:"In this post , we are going to highlight the many benefits of bogging "
-    },
-    {
-        id:6,
-        cover:"img/card-6.jpg",
-        category:"lifeStyle",
-        title:"What are the best countires to visit?",
-        desc:"In this post , we are going to highlight the many benefits of bogging "
-    },
-]
+const Sdata = [
+  {
+    id: 1,
+    cover: "img/blog1.jpg",
+    category: "Fashion",
+    title: "A Guide to Effortless City Style",
+    desc: "Minimal layers, clean silhouettes, and a few refined accessories that always read premium.",
+    author: "Jasmin Smith",
+    date: "Apr 2026",
+    readTime: "5 min read",
+  },
+  {
+    id: 2,
+    cover: "img/blog2.jpg",
+    category: "Travel",
+    title: "Where to Stay: Boutique Over Big",
+    desc: "Small hotels with character, excellent light, and details that make the experience feel personal.",
+    author: "Mila Laurent",
+    date: "Apr 2026",
+    readTime: "6 min read",
+  },
+  {
+    id: 3,
+    cover: "img/blog3.jpg",
+    category: "Interiors",
+    title: "The Luxury of Quiet Spaces",
+    desc: "How a calmer home—less noise, better materials—changes your mood and your focus.",
+    author: "Ava Chen",
+    date: "Mar 2026",
+    readTime: "4 min read",
+  },
+  {
+    id: 4,
+    cover: "img/blog4.jpg",
+    category: "Design",
+    title: "Gold, Black, and Soft Neutrals",
+    desc: "A color palette that feels expensive: balanced contrast, warm highlights, and clean typography.",
+    author: "Noah Reed",
+    date: "Mar 2026",
+    readTime: "3 min read",
+  },
+  {
+    id: 5,
+    cover: "img/card-5.jpg",
+    category: "Fragrance",
+    title: "A Signature Scent for Every Season",
+    desc: "Fresh in summer, deeper in winter—how to pick a fragrance profile that feels like you.",
+    author: "Sofia Martins",
+    date: "Feb 2026",
+    readTime: "5 min read",
+  },
+  {
+    id: 6,
+    cover: "img/card-6.jpg",
+    category: "Essentials",
+    title: "Polished Travel: Carry-On Only",
+    desc: "A complete packing strategy—fabric choices, folding tricks, and outfits that stay sharp.",
+    author: "Ethan Cole",
+    date: "Feb 2026",
+    readTime: "7 min read",
+  },
+];
 export default Sdata;
