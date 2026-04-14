@@ -1,7 +1,7 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import SlickSlider from "react-slick";
 import Sdata from "./Sdata";
 import "./style.css";
 
@@ -40,7 +40,7 @@ const Slide = () =>{
             <p className="sub">Editor’s picks for design, travel, and modern luxury.</p>
           </div>
         </div>
-        <Slider {...settings}>
+        <SlickSlider {...settings}>
             {Sdata.map((value) =>{
                 return(
                     <div className="box" key={value.id}>
@@ -57,7 +57,7 @@ const Slide = () =>{
                 )
             })}
 
-    </Slider>
+    </SlickSlider>
     </div>
     </>
     )

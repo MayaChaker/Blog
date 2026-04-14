@@ -1,7 +1,7 @@
 import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import SlickSlider from "react-slick";
 import SpotlightData from "./SpotlightData";
 import "../Slide/style.css"
 
@@ -31,7 +31,7 @@ const CardTwo = () =>{
             <p className="sub">A tighter edit, a softer motion, a cleaner card layout.</p>
           </div>
         </div>
-        <Slider {...settings}>
+        <SlickSlider {...settings}>
             {SpotlightData.map((value) =>{
                 return(
                     <div className="box" key={value.id}>
@@ -48,7 +48,7 @@ const CardTwo = () =>{
                 )
             })}
 
-        </Slider>
+        </SlickSlider>
     </div>
         </>
     )
