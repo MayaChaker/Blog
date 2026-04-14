@@ -16,7 +16,7 @@ const BlogHome = () =>{
             paraTwo:"NEW WAYS TO WEAR DENIM BELT BAGS MAKE A ",
             name:"By Jasmin Smith",
             subTitle:"How to Shop Mindfully",
-            qrCode:"img/qrcode.png",
+            qrCode:"img/frame.png",
             cover:"img/blog5.jpg",
         },
     ]
